@@ -104,7 +104,8 @@ def populous_continents
     FROM
       countries
     GROUP BY
-      continent) AS beans
+      continent
+    ) AS beans
   WHERE
     sum_pop > 100000000
   SQL
